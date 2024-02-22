@@ -49,19 +49,19 @@
                 <p>Jeg har haft forskellige ansvarsområder i de forskellige projekter, derfor kan du bruge filtreringen til at se hvilke projekter, jeg har været lead på hvad</p>
             </div>
             <div id="filtre">
-                <h3>ALLE</h3>
+                <h3 onclick="skiftFilter('alle')">ALLE</h3>
                 <h3 class="dot">.</h3>
-                <h3>Programmering</h3>
+                <h3 onclick="skiftFilter('programmering')">Programmering</h3>
                 <h3 class="dot">.</h3>
-                <h3>Design</h3>
+                <h3 onclick="skiftFilter('design')">Design</h3>
                 <h3 class="dot">.</h3>
-                <h3>Illustrationer</h3>
+                <h3 onclick="skiftFilter('illustrationer')">Illustrationer</h3>
                 <h3 class="dot">.</h3>
-                <h3 class="dot">Fotografering</h3>
+                <h3 onclick="skiftFilter('fotografering')">Fotografering</h3>
             </div>
         </div>
 
-        <div id="port3">
+        <div class="port3 hidden" id="alle">
             <a href="Neglementet.html" class="projektOpsætn">
                 <img src="images/webdesign.png" alt="case eksempel Neglementet">
                 <p>
@@ -111,6 +111,99 @@
                 </p>
             </a>
         </div>
+<!-----------------------programmering-------------------------------->        
+        <div class="port3 hidden" id="programmering">
+            <a href="Neglementet.html" class="projektOpsætn">
+                <img src="images/webdesign.png" alt="case eksempel Neglementet">
+                <p>
+                    Neglementet<br>2. semester eksamen, EAAA
+                </p>
+            </a>
+            
+            <a href="Billewho.html" class="projektOpsætn">
+                <img src="images/BWfront.png" alt="case eksempel BilleWHo">
+                <p>
+                    BilleWho<br>Interaktiv Storytelling, EAAA
+                </p>
+            </a>
+
+            <a href="oomh.html" class="projektOpsætn">
+                <img src="images/oomhfront.png" alt="case eksempel OutOfMyHand">
+                <p>
+                    OutOfMyHand<br>Mit eget site
+                </p>
+            </a>
+        </div>
+<!-----------------------------Design-------------------------------->
+        <div class="port3 hidden" id="design">
+            <a href="AnnD.html" class="projektOpsætn">
+                <img src="images/AnnDcollage.png" alt="case eksempel Ann Demeulemeester">
+                <p>
+                    Ann Demeulemeester<br>4. semester eksamen, VIA
+                </p>
+            </a>
+
+            <a href="oomh.html" class="projektOpsætn">
+                <img src="images/oomhfront.png" alt="case eksempel OutOfMyHand">
+                <p>
+                    OutOfMyHand<br>Mit eget site
+                </p>
+            </a>
+        </div>
+
+<!---------------------------Illustrationer--------------->
+        <div class="port3 hidden" id="illustrationer">
+            <a href="Neglementet.html" class="projektOpsætn">
+                <img src="images/webdesign.png" alt="case eksempel Neglementet">
+                <p>
+                    Neglementet<br>2. semester eksamen, EAAA
+                </p>
+            </a>
+
+            <a href="AnnD.html" class="projektOpsætn">
+                <img src="images/AnnDcollage.png" alt="case eksempel Ann Demeulemeester">
+                <p>
+                    Ann Demeulemeester<br>4. semester eksamen, VIA
+                </p>
+            </a>
+
+            <a href="Haandtegninger.html" class="projektOpsætn">
+                <img src="images/håndtegningcollage.png" alt="case eksempel Håndtegninger">
+                <p>
+                    Håndtegninger<br>Fra hele livet
+                </p>
+            </a>
+
+            <a href="DigitalT.html" class="projektOpsætn">
+                <img src="images/LDigitalcollage.png"  alt="case eksempel digitale tegninger">
+                <p>
+                    Digitale tegninger<br>Fra VIA til EAAA
+                </p>
+            </a>
+        </div>
+<!----------------------------fotografering----------------------->
+        <div class="port3 hidden" id="fotografering">
+            <a href="Neglementet.html" class="projektOpsætn">
+                <img src="images/webdesign.png" alt="case eksempel Neglementet">
+                <p>
+                    Neglementet<br>2. semester eksamen, EAAA
+                </p>
+            </a>
+
+            <a href="sawaru.html" class="projektOpsætn">
+                <img src="images/Content.png" alt="case eksempel Sawaru">
+                <p>
+                    Sawaru<br>1. semester eksamen, EAAA
+                </p>
+            </a>
+
+            <a href="oomh.html" class="projektOpsætn">
+                <img src="images/oomhfront.png" alt="case eksempel OutOfMyHand">
+                <p>
+                    OutOfMyHand<br>Mit eget site
+                </p>
+            </a>
+        </div> 
         <footer>
             <div id="stregerFooter"></div>
             <div id="footerflex">

@@ -12,11 +12,17 @@ burgerMenu.addEventListener('click', function() {
   document.body.classList.toggle("bodyoverlay");
 });
 
+const startBox = document.getElementById(`alle`);
+
+if (startBox !== null){
+  startBox.classList.remove('hidden');;
+}
 
 //andre videoer on scroll
 let registerVideo = (bound, video) => {
   bound = document.querySelector(bound);
   video = document.querySelector(video);
+  if(video !== null) {
   let scrollVideo = () => {
       if (video.duration) {
           let distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
@@ -27,7 +33,27 @@ let registerVideo = (bound, video) => {
       }
       requestAnimationFrame(scrollVideo);
   };
-  requestAnimationFrame(scrollVideo);
+  requestAnimationFrame(scrollVideo);}
 };
 
 registerVideo("#bound-one", "#bound-one video");
+
+
+//filter
+
+function skiftFilter(divId) {
+  // Skjuler alle color boxes
+  hideColorBoxes();
+
+  // Viser den valgte color box
+  const filterBox = document.getElementById(`${divId}`);
+  filterBox.classList.remove('hidden');
+}
+
+function hideColorBoxes() {
+  // Skjuler alle color boxes
+  const filterBoxes = document.querySelectorAll('.port3');
+  filterBoxes.forEach(box => {
+    box.classList.add('hidden');
+  });
+}
